@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="TAHRI-TAOUAL-SOUISSI">
+        <meta name="description" content=" Projet de GLP sur les souris">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="images/logo-page-sourisgame.ico"> 
+        <title>Spécifications du projet</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href ="index.html"> <img src="images/logo-souris.jpg" title="Accueil" alt="logo de la page" width="60" height="80"></a>
+                <ul>
+                     <li> <a href="specification-du-projet.html"> Spécifications du projet</a></li>
+                     <li> <a href="principales-caracteristique-du-projet.html"> Principales caractéristiques du projet</a></li>
+                     <li> <a href="fonctionnalite-du-projet.html"> Fonctionnalités du projet</a></li>
+                     <li> <a href="experience-humaine.html"> Expérience humaine</a></li>
+                     <li> <a href="a-propos.html">A propos</a></li>
+                </ul>
+            </nav>
+                <h1>Spécifications du projet</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Notions de base et contraintes du projet</h2>
+                <article>
+                    <h3>Grille</h3>
+                    <p>La grille est la zone où se déroulera toute la
+                    simulation du jeu. Elle comporte différents endroits dans lesquelles les
+                    souris pourront y trouver de la nourriture, croiser d’autres souris donnant
+                    lieu à une interaction entre ces deux là. Cette grille comportera plusieurs
+                    surfaces de natures différentes (ex : zone d’herbe, zone de champs, zone
+                    bétonnière...) qui affecteront leurs déplacements ( ex : sur les champs la
+                    souris se déplacera plus vite que sur l’herbe...). Elle comporte également
+                    des obstacles pour les souris comme des pièges à souris qui entraînent la
+                    mort de cette dernière, des rochers qu’elle ne pourra pas traverser... La
+                    dimension de cette grille sera générée aléatoirement et déterminera le
+                    nombre de souris pouvant exister, le nombre de pièges, le nombre de
+                    nourritures...</p>
+                    <figure>
+                        <img src="images/exemple-grille.jpg" alt="image d'exemple d'une grille">
+                        <figcaption>Exemple d'une grille tirée d'un jeu </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <h3>Souris</h3>
+                <p>La souris est un petit animal domestique appartenant
+                    à la famille des rongeurs à museau pointu, et a des poils gris, blanc ou
+                    noir selon la race et une longue queue. Dans ce projet, les souris auront
+                    un genre ( masculin ou féminin ), un caractère différent qui affectera leurs
+                    comportements, pourront se nourrir grâce aux nourritures présentes sur
+                    leur chemin. Leurs déplacements sont impactés en fonction de la
+                    disponibilité en nourriture car les sources de nourriture n'étant pas
+                    inépuisables, il est vital pour les souris d'explorer régulièrement la grille
+                    afin de trouver d'autres sources de nourriture, et de veiller au cours de
+                    leur exploration d'être toujours à portée d'un point de nourriture connu
+                    afin d'y retourner s'il le faut. Les souris ont une vision limitée à quelques
+                    cases autour d'elles mais ont une excellente mémoire. Elles se rappellent
+                    donc de tous les endroits qu'elles ont déjà visités. Sur leur chemin aura
+                    lieu des interactions entre elles, ces interactions seront influencées en
+                    fonction des caractères de chacune des souris, elles peuvent communiquer
+                    leurs connaissances quand à l'emplacement connu de nourriture. La souris
+                    peuvent avoir une certaine mémoire sur les souris qui leur ont déjà menti
+                    ou non (et donc tenir compte des informations pour la fois d'après), ont
+                    été coopératives avec eux ou non (et leur rendre la pareille), etc. A l’issue
+                    de ces interactions, les souris pourront également se reproduire entre elles
+                    en fonction d’une probabilité fixée au cours de la simulation. Pour se
+                    reproduire le mâle doit avoir été nourri un minimum pour s'accoupler. La
+                    femelle doit quand à elle être bien nourrie pendant toute la durée de la
+                    gestation (un certain nombre de tour) pour pouvoir donner naissance à N
+                    souriceaux.</p>
+                    <figure>
+                        <img src="images/souris.png" alt="image d'une souris">
+                        <figcaption>Voici une souris qu'on modélisera sur la grille</figcaption>
+                    </figure>
+                </article>
+
+                <article>
+                    <h3>Caractères</h3>
+                    <p>Il y a différents types de caractères de souris :
+                        les souris coopératives : qui donnent leurs informations aux souris
+                        croisées.On pondèrera dans cette catégorie un degré de fiabilité passant
+                        de honnête (la souris donne toujours les vraies infos) à menteuse (la
+                        souris donne systématiquement les infos erronées); -les souris égoïstes :
+                        qui ne fournissent aucune information ;les souris réceptives : qui tiennent
+                        compte des informations qu'on leur communique. On pondèrera dans
+                        cette catégorie un degré de confiance cela va de naïve (qui croient toutes
+                        les informations reçues) à fortement sceptiques (qui croient exactement le
+                        contraire de ce qu'on leur dit) ; et les souris nihilistes : qui ne tiennent pas
+                        compte des informations reçues.</p>
+                </article>
+
+                <article>
+                    <h3>Journal de vie</h3>
+                    <p>Résumé de la vie d’une souris comportant :
+                        les lieux visités, les souris avec qui elle a été en contact, les enfants
+                        éventuels qu’elle a et son âge.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="inner_footer">
+              <div class="footer_third">
+                <dl> 
+                <dt> Copyright &copy; Réalisé par Youssef Souissi, Anas Tahri et Taoual Younes </dt>
+                 <dt> Contact: </dt> 
+                 <dd> youssefsouissi099@gmail.com </dd>
+                 <dd> anas.tahri9513@gmail.com</dd>
+                 <dd>  ytawal@gmail.com</dd>
+                </dl>
+                <a href="https://www.cyu.fr/" target="blank"><img src="images/footer-logo.png" alt="logo u cergy" title="cliquez pour visiter le site de l'université" style="width:300px;height:100px;"></a>
+                  <a href="#" class="ancre"> Revenir en haut de la page</a>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>
